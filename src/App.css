@@ -1,38 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-page {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: 'Rubik', sans-serif;
+}
+
+.mobile-container,
+.text-container {
+  width: 40%;
+  height: 90%;
+}
+
+.mobile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-container p {
+  width: 80%;
+  line-height: 28px;
+  color: hsl(270, 7%, 64%);
+}
+
+.text-container h1 {
+  width: 80%;
+  justify-content: flex-start;
+  color: hsl(271, 36%, 24%);
+}
+
+.mobile-screen {
+  background-color: hsl(0, 0%, 100%);
+  width: 55%;
+  height: 90%;
+  padding: 15px;
+  border-radius: 35px;
+  box-shadow: 4px 5px 6px 6px lightgray;
+}
+
+.inner-mobile {
+  height: 100%;
+}
+
+.upper-container {
+  height: 15%;
+  padding: 10px;
+  background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.lower-container {
+  height: 85%;
+  background-color: hsl(270, 20%, 96%);
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  margin-top: 10px;
+}
+
+img {
+  width: 35px;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+
+.arrowAndImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.arrowAndImage h4 {
+  margin-right: 10px;
+}
+
+.profileName {
+  width: 70%;
+  font-size: 12px;
+  padding-left: 5px;
+  line-height: 10px;
+}
+
+.profileName p {
+  color: rgb(255, 240, 240);
+}
+
+.triple-ellipsis {
+  width: 5%;
+}
+
+.white-containter {
+  position: absolute;
+  text-align: center;
   color: white;
+  background-color: white;
+  width: 180px;
+  right: 64%;
+  top: 11%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.chat-container-one,
+.chat-container-two {
+  width: 70%;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 401;
+  background-color: rgb(225, 224, 224);
+  border-radius: 9px 9px 9px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: hsl(276, 55%, 52%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chat-container-two,
+.chat-container-four,
+.chat-container-five {
+  margin-top: 10px;
+}
+
+.dogImages {
+  margin-top: 14px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 38%;
+  left: 26.5%;
+}
+
+.dogImageOne,
+.dogImageTwo,
+.dogImageThree {
+  border-radius: 12px;
+  height: 50px;
+  width: 60px;
+  border: none;
+}
+
+.chat-container-three,
+.chat-container-four {
+  color: hsl(271, 15%, 43%);
+  font-weight: 405;
+  padding: 12px;
+  font-size: 12px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 0px lightgray;
+  border-radius: 10px 10px 0px 10px;
+}
+
+.chat-container-three {
+  position: absolute;
+  top: 47%;
+  left: 27%;
+  width: 195PX;
+}
+
+.chat-container-four {
+  position: absolute;
+  top: 53.5%;
+  left: 31.5%;
+
+}
+
+.chat-container-five {
+  position: absolute;
+  top: 59.5%;
+  left: 20.5%;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 401;
+  background-color: rgb(225, 224, 224);
+  border-radius: 9px 9px 9px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: hsl(276, 55%, 52%);
+  width: 210px;
+}
+
+.walking-minutes,
+.walking-hour {
+  margin-top: 8px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  border-radius: 10px 10px 10px 0px;
+  width: 210px;
+  padding: 5px;
+  background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+}
+
+.walking-minutes {
+  position: absolute;
+  top: 69%;
+}
+
+.walking-hour {
+  position: absolute;
+  top: 75%
+}
+
+h4 {
+  color: white;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.text-placeholder {
+  background-color: white;
+  color: hsl(206, 6%, 79%);
+  font-weight: 200;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 0px lightgray;
+  position: absolute;
+  top: 82%;
+  width: 280px;
+}
+
+.lower-container .text-placeholder h4 {
+  background-color: hsl(271, 36%, 24%);
+  width: 25px;
+  border-radius: 60px;
+  padding: 4px;
+  margin-left: 60px;
+  font-size: 14px;
+}
+
+.purple-background {
+  background: linear-gradient(to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  height: 85%;
+  width: 24%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0%;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 200px;
 }
