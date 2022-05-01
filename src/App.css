@@ -282,3 +282,121 @@ h4 {
   border-bottom-left-radius: 150px;
   border-bottom-right-radius: 200px;
 }
+
+@media screen and (max-width: 370px) {
+  .App {
+    height: 120vh;
+  }
+
+  .card-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .mobile-container {
+    position: absolute;
+    top: 3%;
+    width: 95%;
+    height: 600px;
+  }
+
+  .mobile-screen {
+    width: 90%;
+  }
+
+  .text-container {
+    position: absolute;
+    top: 63%;
+    height: 350px;
+    width: 93%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .text-container h1 {
+    font-size: 24px;
+  }
+
+  .purple-background {
+    position: absolute;
+    width: 50%;
+    height: 550px;
+  }
+
+  .chat-container-one,
+  .chat-container-two,
+  .chat-container-three,
+  .chat-container-four,
+  .chat-container-five {
+    font-size: 10px;
+  }
+
+  .chat-container-one {
+    position: absolute;
+    top: 21%;
+    width: 150px;
+  }
+
+  .chat-container-two {
+    position: absolute;
+    top: 27%;
+    width: 150px;
+  }
+
+  .white-containter {
+    position: absolute;
+    top: 7%;
+    left: 26%;
+    width: 150px;
+  }
+
+  .dogImages {
+    width: 190px;
+    height: 36px;
+  }
+
+  .chat-container-three {
+    position: absolute;
+    top: 48.5%;
+    left: 37%;
+    width: 160px;
+  }
+
+  .chat-container-four {
+    position: absolute;
+    top: 55%;
+    left: 53%;
+    width: 110px;
+  }
+
+  .chat-container-five {
+    position: absolute;
+    top: 62%;
+    left: 12%;
+    width: 160px;
+  }
+
+  .walking-minutes {
+    height: 28px;
+    position: absolute;
+    top: 73%;
+    width: 160px;
+    font-size: 10px;
+  }
+
+  .walking-hour {
+    position: absolute;
+    top: 78%;
+    width: 160px;
+    font-size: 10px;
+    height: 28px;
+  }
+
+  .text-placeholder {
+    top: 85%;
+    width: 230px;
+  }
+
+}
